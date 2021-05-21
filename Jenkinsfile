@@ -1,7 +1,7 @@
 pipleline {
   agent any
   stages {
-    stage {'Build'} {
+    stage ('Build') {
       Steps {
       echo 'Running build'
         sh './gradlew build --no-deamon'
